@@ -1,9 +1,14 @@
 import express from "express";
+import { Config } from "./interfaces/Config";
 
 const app = express.Router();
 
 app.get("/random", (req, res) => {
-  res.json({ samples: 12, multiplicationFactor: 13.45 });
+  const config: Config = {
+    samples: 12,
+    multiplicationFactor: 12.34,
+  };
+  res.json(config);
 });
 
 export default app;
