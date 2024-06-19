@@ -1,4 +1,3 @@
-import { Point } from "./interfaces/Point";
 import { computeAngle, computePointOnBigCircle } from "./math";
 import "./style.css";
 
@@ -13,7 +12,7 @@ const r = 1;
 
 for (let i = 0; i < samples; i++) {
   const angle = computeAngle(i, samples);
-  const point: Point = computePointOnBigCircle(angle);
+  const point = computePointOnBigCircle(angle);
 
   const circle = document.createElementNS(svgns, "circle");
   circle.setAttributeNS(null, "cx", point.x + "");
