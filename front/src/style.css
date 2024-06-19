@@ -14,5 +14,10 @@ svg {
       fill: black;
       stroke: none;
     }
+
+    line {
+      stroke: black;
+      stroke-width: 0.02em;
+    }
   }
 }

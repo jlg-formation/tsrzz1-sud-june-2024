@@ -5,6 +5,7 @@
     "xabikos.javascriptsnippets",
     "whtouche.vscode-js-console-utils",
     "esbenp.prettier-vscode",
-    "esamatti.unsaved"
+    "esamatti.unsaved",
+    "meganrogge.template-string-converter"
   ]
 }
