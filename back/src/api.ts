@@ -1,12 +1,13 @@
 import express from "express";
 import { Config } from "./interfaces/Config";
+import { random } from "./misc";
 
 const app = express.Router();
 
 app.get("/random", (req, res) => {
   const config: Config = {
-    samples: 12,
-    multiplicationFactor: 12.34,
+    samples: random(0, 500),
+    multiplicationFactor: random(0, 100, 2),
   };
   res.json(config);
 });
